@@ -3,7 +3,7 @@ jniscrteng
 libproxyjniを利用して、javaのScriptEngineを呼び出すプログラムです。
 
 ## Description ##
-![use case](images/ucJniScrtEmg.jpg)  
+![use case](images/ucJniScrtEng.jpg)  
 ## Demo ##
 
 ## VS. ##
