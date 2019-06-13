@@ -8,5 +8,5 @@
   },
   "dependencies": {
     "libproxyjni": "2.1.5"
-  },
+  }
 }
