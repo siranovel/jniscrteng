@@ -2,9 +2,10 @@
   "name": "jniscrteng",
   "description": "",
   "version": "0.9",
+  "license": "GPL v2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/siranovel/jniscrteng.git"
+    "url": "git+https://github.com/siranovel/jniscrteng.git"
   },
   "dependencies": {
     "libproxyjni": "2.1.5"
