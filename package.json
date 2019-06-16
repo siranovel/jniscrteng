@@ -2,7 +2,7 @@
   "name": "jniscrteng",
   "description": "",
   "version": "0.9",
-  "license": "GPL v2.0",
+  "license": "GPL-2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/siranovel/jniscrteng.git"
