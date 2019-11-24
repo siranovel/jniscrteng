@@ -1,0 +1,477 @@
+ƒeƒXƒgŒ‹‰Ê
+
+jniscrteng sample2.js
+--- Function Test ---
+test_paramX in
+test_paramN in
+iv: 10
+lv: 20
+fv: 30.5
+dv: 40.5
+test_paramS in id00006 name00006 memo00006
+test_paramAV in
+--- aiv ---
+index: 0
+data: 10
+index: 1
+data: 11
+index: 2
+data: 12
+index: 3
+data: 13
+--- alv ---
+index: 0
+data: 20
+index: 1
+data: 21
+index: 2
+data: 22
+index: 3
+data: 23
+--- afv ---
+index: 0
+data: 30.5
+index: 1
+data: 31.5
+index: 2
+data: 32.5
+index: 3
+data: 33.5
+--- adv ---
+index: 0
+data: 40.5
+index: 1
+data: 41.5
+index: 2
+data: 42.5
+index: 3
+data: 43.5
+test_paramHV in
+--- hv ---
+index: key04
+data: 40.5
+index: key03
+data: 30.5
+index: key02
+data: 20
+index: key01
+data: 10
+index: key08
+---  ---
+index: 0
+data: 30.5
+index: 1
+data: 31.5
+index: 2
+data: 32.5
+index: 3
+data: 33.5
+
+index: key07
+---  ---
+index: 0
+data: 20
+index: 1
+data: 21
+index: 2
+data: 22
+index: 3
+data: 23
+
+index: key06
+---  ---
+index: 0
+data: 10
+index: 1
+data: 11
+index: 2
+data: 12
+index: 3
+data: 13
+
+index: key05
+data: value05
+index: key09
+---  ---
+index: 0
+data: 40.5
+index: 1
+data: 41.5
+index: 2
+data: 42.5
+index: 3
+data: 43.5
+
+index: key10
+---  ---
+index: keyX4
+data: 40.5
+index: keyX3
+data: 30.5
+index: keyX2
+data: 20
+index: keyX1
+data: 10
+
+test_returnIV in: 10
+value:20
+test_returnLV in: 20
+value:40
+test_returnFV in: 30.5
+value:61.000000
+test_returnDV in: 40.5
+value:81.000000
+test_returnPV in
+value:Hello javaScript world!!
+test_returnAIV in
+100 110 120 130 140
+test_returnALV in
+200 210 220 230 240
+test_returnAFV in
+300.500000 310.500000 320.500000 330.500000 340.500000
+test_returnADV in
+400.800000 410.800000 420.800000 430.800000 440.800000
+test_returnAOV in
+500 500.300000 <Hello javaScript world!!> 600 610 620 630 640
+700.300000 710.300000 720.300000 730.300000 740.300000
+
+test_returnHV in
+key:key01 1000
+key:key02 4000.600000
+key:key03 <Hello javaScript world!!>
+key:key04 100 110 120 130 140
+key:key05 400.800000 410.800000 420.800000 430.800000 440.800000
+key:key06 key:keyX01 1100
+key:keyX02 4100.700000
+key:keyX03 <sub Hash>
+key:keyX04 200 210
+key:keyX05 500.500000 510.500000
+test_returnAHV in
+idx:0
+key:key01 1100
+key:key02 <value01>
+idx:1
+key:key01 1100
+key:key02 <value01>
+idx:2
+key:key01 1100
+key:key02 <value01>
+idx:3
+key:key01 1100
+key:key02 <value01>
+--- Static Method Test ---
+staticTest_paramX in
+staticTest_paramN in
+iv: 10
+lv: 20
+fv: 30.5
+dv: 40.5
+staticTest_paramS in id00006 name00006 memo00006
+staticTest_paramAV in
+--- aiv ---
+index: 0
+data: 10
+index: 1
+data: 11
+index: 2
+data: 12
+index: 3
+data: 13
+--- alv ---
+index: 0
+data: 20
+index: 1
+data: 21
+index: 2
+data: 22
+index: 3
+data: 23
+--- afv ---
+index: 0
+data: 30.5
+index: 1
+data: 31.5
+index: 2
+data: 32.5
+index: 3
+data: 33.5
+--- adv ---
+index: 0
+data: 40.5
+index: 1
+data: 41.5
+index: 2
+data: 42.5
+index: 3
+data: 43.5
+staticTest_paramHV in
+--- hv ---
+index: key04
+data: 40.5
+index: key03
+data: 30.5
+index: key02
+data: 20
+index: key01
+data: 10
+index: key08
+---  ---
+index: 0
+data: 30.5
+index: 1
+data: 31.5
+index: 2
+data: 32.5
+index: 3
+data: 33.5
+
+index: key07
+---  ---
+index: 0
+data: 20
+index: 1
+data: 21
+index: 2
+data: 22
+index: 3
+data: 23
+
+index: key06
+---  ---
+index: 0
+data: 10
+index: 1
+data: 11
+index: 2
+data: 12
+index: 3
+data: 13
+
+index: key05
+data: value05
+index: key09
+---  ---
+index: 0
+data: 40.5
+index: 1
+data: 41.5
+index: 2
+data: 42.5
+index: 3
+data: 43.5
+
+index: key10
+---  ---
+index: keyX4
+data: 40.5
+index: keyX3
+data: 30.5
+index: keyX2
+data: 20
+index: keyX1
+data: 10
+
+staticTest_returnIV in: 10
+value:30
+staticTest_returnLV in: 20
+value:60
+staticTest_returnFV in: 30.5
+value:91.500000
+staticTest_returnDV in: 40.5
+value:121.500000
+staticTest_returnPV in
+value:Hello javaScript world!!
+staticTest_returnAIV in
+100 110 120 130 140
+staticTest_returnALV in
+200 210 220 230 240
+staticTest_returnAFV in
+300.500000 310.500000 320.500000 330.500000 340.500000
+staticTest_returnADV in
+400.800000 410.800000 420.800000 430.800000 440.800000
+staticTest_returnAOV in
+500 500.300000 <Hello javaScript world!!> 600 610 620 630 640
+700.300000 710.300000 720.300000 730.300000 740.300000
+
+staticTest_returnHV in
+key:key01 1000
+key:key02 4000.600000
+key:key03 <Hello javaScript world!!>
+key:key04 100 110 120 130 140
+key:key05 400.800000 410.800000 420.800000 430.800000 440.800000
+key:key06 key:keyX01 1100
+key:keyX02 4100.700000
+key:keyX03 <sub Hash>
+key:keyX04 200 210
+key:keyX05 500.500000 510.500000
+staticTest_returnAHV in
+idx:0
+key:key01 1100
+key:key02 <value01>
+idx:1
+key:key01 1100
+key:key02 <value01>
+idx:2
+key:key01 1100
+key:key02 <value01>
+idx:3
+key:key01 1100
+key:key02 <value01>
+--- Object Method Test ---
+objectTest_paramX in
+objectTest_paramN in
+iv: 10
+lv: 20
+fv: 30.5
+dv: 40.5
+objectTest_paramS in id00006 name00006 memo00006
+objectTest_paramAV in
+--- aiv ---
+index: 0
+data: 10
+index: 1
+data: 11
+index: 2
+data: 12
+index: 3
+data: 13
+--- alv ---
+index: 0
+data: 20
+index: 1
+data: 21
+index: 2
+data: 22
+index: 3
+data: 23
+--- afv ---
+index: 0
+data: 30.5
+index: 1
+data: 31.5
+index: 2
+data: 32.5
+index: 3
+data: 33.5
+--- adv ---
+index: 0
+data: 40.5
+index: 1
+data: 41.5
+index: 2
+data: 42.5
+index: 3
+data: 43.5
+objectTest_paramHV in
+--- hv ---
+index: key04
+data: 40.5
+index: key03
+data: 30.5
+index: key02
+data: 20
+index: key01
+data: 10
+index: key08
+---  ---
+index: 0
+data: 30.5
+index: 1
+data: 31.5
+index: 2
+data: 32.5
+index: 3
+data: 33.5
+
+index: key07
+---  ---
+index: 0
+data: 20
+index: 1
+data: 21
+index: 2
+data: 22
+index: 3
+data: 23
+
+index: key06
+---  ---
+index: 0
+data: 10
+index: 1
+data: 11
+index: 2
+data: 12
+index: 3
+data: 13
+
+index: key05
+data: value05
+index: key09
+---  ---
+index: 0
+data: 40.5
+index: 1
+data: 41.5
+index: 2
+data: 42.5
+index: 3
+data: 43.5
+
+index: key10
+---  ---
+index: keyX4
+data: 40.5
+index: keyX3
+data: 30.5
+index: keyX2
+data: 20
+index: keyX1
+data: 10
+
+objectTest_returnIV in: 10
+value:30
+objectTest_returnLV in: 20
+value:60
+objectTest_returnFV in: 30.5
+value:91.500000
+objectTest_returnDV in: 40.5
+value:121.500000
+objectTest_returnPV in
+value:Hello javaScript world!!
+objectTest_returnAIV in
+100 110 120 130 140
+objectTest_returnALV in
+200 210 220 230 240
+objectTest_returnAFV in
+300.500000 310.500000 320.500000 330.500000 340.500000
+objectTest_returnADV in
+400.800000 410.800000 420.800000 430.800000 440.800000
+objectTest_returnAOV in
+500 500.300000 <Hello javaScript world!!> 600 610 620 630 640
+700.300000 710.300000 720.300000 730.300000 740.300000
+
+objectTest_returnHV in
+key:key01 1000
+key:key02 4000.600000
+key:key03 <Hello javaScript world!!>
+key:key04 100 110 120 130 140
+key:key05 400.800000 410.800000 420.800000 430.800000 440.800000
+key:key06 key:keyX01 1100
+key:keyX02 4100.700000
+key:keyX03 <sub Hash>
+key:keyX04 200 210
+key:keyX05 500.500000 510.500000
+objectTest_returnAHV in
+idx:0
+key:key01 1100
+key:key02 <value01>
+idx:1
+key:key01 1100
+key:key02 <value01>
+idx:2
+key:key01 1100
+key:key02 <value01>
+idx:3
+key:key01 1100
+key:key02 <value01>
