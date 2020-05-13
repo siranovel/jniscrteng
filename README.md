@@ -1,4 +1,4 @@
-jniscrteng
+﻿jniscrteng
 ==========
 libproxyjniを利用して、javaのScriptEngineを呼び出すプログラムです。
 
@@ -13,7 +13,7 @@ libproxyjniに依存する
 (https://github.com/siranovel/libproxyjni.git)
 
 ## Usage ##
-    $ jniscrteng <js file>
+$ jniscrteng <js file> <upgrade-module-path>
 
 ## install ##
     git clone https://github.com/siranovel/jniscrteng.git  
