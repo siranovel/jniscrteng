@@ -10,8 +10,10 @@ libproxyjniを利用して、javaのScriptEngineを呼び出すプログラム�
 
 ## Requirement ##
 
-libproxyjniに依存する  
+libproxyjniに依存する(version 0.9のみ)  
 (https://github.com/siranovel/libproxyjni.git)
+
+
 
 ## Usage ##
 $ jniscrteng <js file> <upgrade-module-path>
