@@ -1,6 +1,7 @@
-﻿jniscrteng
+jniscrteng
 ==========
-libproxyjniを利用して、javaのScriptEngineを呼び出すプログラムです。
+c言語からjavaのScriptEngineを利用して、
+動的プログラム(graaljs,jruby,jpython等)内の関数及びメゾッドを呼び出すライブラリです。
 
 ## Description ##
 ![use case](images/ucJniScrtEng.jpg)  
@@ -16,7 +17,8 @@ libproxyjniに依存する(version 0.9のみ)
 
 
 ## Usage ##
-$ jniscrteng <js file> <upgrade-module-path>
+このライブラリのテスト方法  
+$ jniscrteng [ScriptFile] [UpgrageModulePath]
 
 ## install ##
     git clone https://github.com/siranovel/jniscrteng.git  
