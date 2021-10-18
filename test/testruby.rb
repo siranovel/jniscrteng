@@ -118,6 +118,16 @@ def test_returnADV()
    return adv
 end
 #
+# 戻り(オブジェクトの配列)テスト
+def test_returnAOV()
+   aov = [500, 500.3, "Hello javaScript world!!",
+                   [600, 610, 620, 630, 640],
+                   [700.3, 710.3, 720.3, 730.3, 740.3],
+   ]
+   printf "test_returnAOV in\n"
+   return aov
+end
+#
 # 戻り(ハッシュ)テスト
 def test_returnHV()
    hv = {
