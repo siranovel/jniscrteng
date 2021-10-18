@@ -1,4 +1,3 @@
-#coding: utf-8
 def test_paramX():
     print( "test_paramX in" )
     
