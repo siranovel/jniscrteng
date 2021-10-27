@@ -25,10 +25,10 @@ end
 #パラメータ(数字の配列:int,long,float,double)テスト
 def test_paramAV(aiv, alv, afv, adv)
    printf "test_paramAV in\n"
-   dspArray("aiv:", aiv)
-   dspArray("alv:", alv)
-   dspArray("afv:", afv)
-   dspArray("adv:", adv)
+   dspArray("aiv", aiv)
+   dspArray("alv", alv)
+   dspArray("afv", afv)
+   dspArray("adv", adv)
 end
 def dspArray(name, av)
    printf "%s:", name  
@@ -289,13 +289,13 @@ class HogeX
         public :staticTest_paramX
         
         def staticTest_paramS(id, name, memo)
-            printf "Hoge::staticTest_paramS in\n"
+            printf "HogeX::staticTest_paramS in\n"
             printf "id:%s name:%s memo:%s\n", id, name, memo 
         end
         public :staticTest_paramS
         
         def staticTest_paramN(iv, lv, fv, dv)
-           printf "Hoge::staticTest_paramN in\n"
+           printf "HogeX::staticTest_paramN in\n"
            printf "iv:%d\n", iv
            printf "lv:%d\n", lv
            printf "fv:%f\n", fv
@@ -304,7 +304,7 @@ class HogeX
         public :staticTest_paramN
 
         def staticTest_paramAV(aiv, alv, afv, adv)
-           printf "Hoge::staticTest_paramAV in\n"
+           printf "HogeX::staticTest_paramAV in\n"
            dspArray("aiv", aiv)
            dspArray("alv", alv)
            dspArray("afv", afv)
@@ -313,72 +313,82 @@ class HogeX
         public :staticTest_paramAV
 
         def staticTest_paramHV(hv)
-            puts "Hoge::staticTest_paramHV in"
+            puts "HogeX::staticTest_paramHV in"
             dspHash(hv)
         end
         public :staticTest_paramHV
 
         def staticTest_returnIV(iv)
-            printf "Hoge::staticTest_returnIV in\n"
+            printf "HogeX::staticTest_returnIV in\n"
             printf "iv:%d\n", iv
             return iv * 2
         end
         public :staticTest_returnIV
 
         def staticTest_returnLV(lv)
-            printf "Hoge::staticTest_returnLV in\n"
+            printf "HogeX::staticTest_returnLV in\n"
             printf "lv:%d\n", lv
             return lv * 2
         end
         public :staticTest_returnLV
 
         def staticTest_returnFV(fv)
-            printf "Hoge::staticTest_returnFV in\n"
+            printf "HogeX::staticTest_returnFV in\n"
             printf "fv:%f\n", fv
             return fv * 2
         end
         public :staticTest_returnFV
 
         def staticTest_returnDV(dv)
-            printf "Hoge::staticTest_returnDV in\n"
+            printf "HogeX::staticTest_returnDV in\n"
             printf "dv:%f\n", dv
             return dv * 2
         end
         public :staticTest_returnDV
 
         def staticTest_returnPV()
-            printf "Hoge::test_returnPV in\n"
+            printf "HogeX::test_returnPV in\n"
             return "hello ruby world"
         end
         public :staticTest_returnPV
 
         def staticTest_returnAIV()
            aiv = [10, 11, 12, 13, 14, 15]
-           printf "Hoge::staticTest_returnAIV in\n"
+           printf "HogeX::staticTest_returnAIV in\n"
            return aiv
         end
         public :staticTest_returnAIV
 
         def staticTest_returnALV()
            alv = [20, 21, 22, 23, 24, 25]
-           printf "Hoge::staticTest_returnALV in\n"
+           printf "HogeX::staticTest_returnALV in\n"
            return alv
         end
         public :staticTest_returnALV
 
         def staticTest_returnAFV()
            afv = [30.3, 31.3, 32.3, 33.3, 34.3, 35.3]
-           printf "Hoge::staticTestt_returnAFV in\n"
+           printf "HogeX::staticTestt_returnAFV in\n"
            return afv
         end
         public :staticTest_returnAFV
 
         def staticTest_returnADV()
            adv = [40.3, 41.3, 42.3, 43.3, 44.3, 45.3]
-           printf "Hoge::staticTest_returnADV in\n"
+           printf "HogeX::staticTest_returnADV in\n"
            return adv
         end
         public :staticTest_returnADV
+        
+        def staticTest_returnAOV()
+           aov = [500, 500.3, "Hello javaScript world!!",
+                           [600, 610, 620, 630, 640],
+                           [700.3, 710.3, 720.3, 730.3, 740.3],
+           ]
+           printf "HogeX::staticTest_returnAOV in\n"
+           return aov
+        end
+        public :staticTest_returnAOV
 
         def staticTest_returnHV()
             hv = {
@@ -396,7 +406,7 @@ class HogeX
                  return x * 2
                }
            }
-           printf "Hoge::staticTest_returnHV in\n"
+           printf "HogeX::staticTest_returnHV in\n"
            return hv
         end
         public :staticTest_returnHV
@@ -406,13 +416,13 @@ class HogeX
                {"keyX1" => 100, "keyX2" => 110.5, "keyX3" => "valueX31"},
                {"keyX1" => 200, "keyX2" => 120.5, "keyX3" => "valueX32"}
             ];
-           printf "Hoge::staticTest_returnAHV in\n"
+           printf "HogeX::staticTest_returnAHV in\n"
            return ahv
         end
         public :staticTest_returnAHV
 
 		def staticTest_returnO()
-		    printf "Hoge::staticTest_returnO in\n"
+		    printf "HogeX::staticTest_returnO in\n"
 			return lambda { |x| x * 2}
 		end
         public :staticTest_returnO
@@ -421,13 +431,13 @@ class HogeX
         printf "HogeX::objectTest_paramX in\n"
     end
     def objectTest_paramS(id, name, memo)
-       printf "Hoge::objectTest_paramS in\n"
+       printf "HogeX::objectTest_paramS in\n"
        printf "id:%s name:%s memo:%s\n", id, name, memo 
     end
     public :objectTest_paramS 
 
     def objectTest_paramN(iv, lv, fv, dv)
-       printf "Hoge::objectTest_paramN in\n"
+       printf "HogeX::objectTest_paramN in\n"
        printf "iv:%d\n", iv
        printf "lv:%d\n", lv
        printf "fv:%f\n", fv
@@ -436,7 +446,7 @@ class HogeX
     public :objectTest_paramN
 
     def objectTest_paramAV(aiv, alv, afv, adv)
-       printf "Hoge::objectTest_paramAV in\n"
+       printf "HogeX::objectTest_paramAV in\n"
        dspArray("aiv", aiv)
        dspArray("alv", alv)
        dspArray("afv", afv)
@@ -445,72 +455,82 @@ class HogeX
     public :objectTest_paramAV
 
     def objectTest_paramHV(hv)
-        puts "Hoge::objectTest_paramHV in"
+        puts "HogeX::objectTest_paramHV in"
         dspHash(hv)
     end
     public :objectTest_paramHV
     
     def objectTest_returnIV(iv)
-        printf "Hoge::objectTest_returnIV in\n"
+        printf "HogeX::objectTest_returnIV in\n"
         printf "iv:%d\n", iv
         return iv * 2
     end
     public :objectTest_returnIV
     
     def objectTest_returnLV(lv)
-        printf "Hoge::objectTest_returnLV in\n"
+        printf "HogeX::objectTest_returnLV in\n"
         printf "lv:%d\n", lv
         return lv * 2
     end
     public :objectTest_returnLV
     
     def objectTest_returnFV(fv)
-        printf "Hoge::objectTest_returnFV in\n"
+        printf "HogeX::objectTest_returnFV in\n"
         printf "fv:%f\n", fv
         return fv * 2
     end
     public :objectTest_returnFV
     
     def objectTest_returnDV(dv)
-        printf "Hoge::objectTest_returnDV in\n"
+        printf "HogeX::objectTest_returnDV in\n"
         printf "dv:%f\n", dv
         return dv * 2
     end
     public :objectTest_returnDV
     
     def objectTest_returnPV()
-        printf "Hoge::objectTest_returnPV in\n"
+        printf "HogeX::objectTest_returnPV in\n"
         return "hello ruby world"
     end
     public :objectTest_returnPV
     
     def objectTest_returnAIV()
        aiv = [10, 11, 12, 13, 14, 15]
-       printf "Hoge::objectTest_returnAIV in\n"
+       printf "HogeX::objectTest_returnAIV in\n"
        return aiv
     end
     public :objectTest_returnAIV
     
     def objectTest_returnALV()
        alv = [20, 21, 22, 23, 24, 25]
-       printf "Hoge::objectTest_returnALV in\n"
+       printf "HogeX::objectTest_returnALV in\n"
        return alv
     end
     public :objectTest_returnALV
     
     def objectTest_returnAFV()
        afv = [30.3, 31.3, 32.3, 33.3, 34.3, 35.3]
-       printf "Hoge::objectTest_returnAFV in\n"
+       printf "HogeX::objectTest_returnAFV in\n"
        return afv
     end
     public :objectTest_returnAFV
     
     def objectTest_returnADV()
        adv = [40.3, 41.3, 42.3, 43.3, 44.3, 45.3]
-       printf "Hoge::objectTest_returnADV in\n"
+       printf "HogeX::objectTest_returnADV in\n"
        return adv
     end
     public :objectTest_returnADV
+
+    def objectTest_returnAOV()
+       aov = [500, 500.3, "Hello javaScript world!!",
+                       [600, 610, 620, 630, 640],
+                       [700.3, 710.3, 720.3, 730.3, 740.3],
+       ]
+       printf "HogeX::test_returnAOV in\n"
+       return aov
+    end
+    public :objectTest_returnAOV
     
     def objectTest_returnHV()
         hv = {
@@ -528,7 +548,7 @@ class HogeX
              return x * 2
            }
        }
-       printf "Hoge::objectTest_returnHV in\n"
+       printf "HogeX::objectTest_returnHV in\n"
        return hv
     end
     public :objectTest_returnHV
@@ -538,13 +558,13 @@ class HogeX
            {"keyX1" => 100, "keyX2" => 110.5, "keyX3" => "valueX31"},
            {"keyX1" => 200, "keyX2" => 120.5, "keyX3" => "valueX32"}
         ];
-       printf "Hoge::objectTest_returnAHV in\n"
+       printf "HogeX::objectTest_returnAHV in\n"
        return ahv
     end
     public :objectTest_returnAHV
     
 	def objectTest_returnO()
-	    printf "Hoge::objectTest_returnO in\n"
+	    printf "HogeX::objectTest_returnO in\n"
 		return lambda { |x| x * 2}
 	end
     public :objectTest_returnO

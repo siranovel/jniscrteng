@@ -1,7 +1,7 @@
 jniscrteng
 ==========
 c言語からjavaのScriptEngineを利用して、
-動的プログラム(graaljs,jruby,jpython等)内の関数及びメゾッドを呼び出すライブラリです。
+動的プログラム(graaljs,jruby,jpython3等)内の関数及びメゾッドを呼び出すライブラリです。
 
 ## Description ##
 ![use case](images/ucJniScrtEng.jpg)  
