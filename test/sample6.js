@@ -94,7 +94,11 @@ function test_returnADV() {
 function test_returnAOV() {
     var aov = [500, 500.3, 'Hello javaScript world!!'
                   , [600, 610, 620, 630, 640]
-                  , [700.3, 710.3, 720.3, 730.3, 740.3],
+                  , [700.3, 710.3, 720.3, 730.3, 740.3]
+                  , {
+				        key01: 1000,
+				        key02: 4000.6,
+                  },
               ]
               
     print("test_returnAOV in")
@@ -113,6 +117,9 @@ function test_returnHV() {
             keyX03: 'sub Hash',
             keyX04: [200, 210],
             keyX05: [500.5, 510.5],
+        },
+        key07: () => {
+            return 100;
         },
     }
     print("test_returnHV in")
@@ -355,6 +362,11 @@ var HogeY = class {
         this.name = name;
         this.memo = memo;
     }
+    showInfox(objX) {
+       printf ("HogeY::showInfox in\n")
+       printf ("id:%s name:%s memo:%s\n", this.id, this.name, this.memo )
+       objX.objectTest_paramS(this.id, this.name, this.memo)
+    }
 };
 
-var hogeX = new HogeX();
+// var hogeX = new HogeX();
