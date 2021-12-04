@@ -2,17 +2,17 @@ def test_paramX():
     print( "test_paramX in" )
     
 #
-def test_paramS(id, name, memo):
-    print( "test_paramS in" )
-    print( "id:" , id, ", name:", name, ", memo:",  memo )
-
-#
 def test_paramN(iv, lv, fv, dv):
     print( "test_paramN in" )
     print( "iv:", iv )
     print( "lv:", lv )
     print( "fv:", fv )
     print( "dv:", dv )
+
+#
+def test_paramS(id, name, memo):
+    print( "test_paramS in" )
+    print( "id:" , id, ", name:", name, ", memo:",  memo )
 
 #
 def test_paramAV(aiv, alv, afv, adv):
@@ -90,6 +90,15 @@ def test_returnADV():
     print( "test_returnADV in" )
     return adv
 
+#
+def test_returnAOV():
+    aov = [500, 5005, "Hello javaScript world!!",
+        [600, 610, 620, 630, 640],
+        [700.3, 710.3, 720.3, 730.3, 740.3],
+    ]
+    print( "test_returnAOV in" )
+    return aov
+    
 #
 def test_returnHV():
     print ("test_returnHV in")
@@ -205,7 +214,7 @@ class HogeX:
         
     @staticmethod
     def staticTest_returnALV():
-        alv = [20, 21, 22, 23, 24]
+        alv = [20L, 21L, 22L, 23L, 24L]
         print ("staticTest_returnALV in")
         return alv
         
@@ -221,6 +230,15 @@ class HogeX:
         print ("staticTest_returnADV in")
         return adv
         
+    @staticmethod
+    def staticTest_returnAOV():
+        aov = [500, 5005, "Hello javaScript world!!",
+            [600, 610, 620, 630, 640],
+            [700.3, 710.3, 720.3, 730.3, 740.3],
+        ]
+        print( "staticTest_returnAOV in" )
+        return aov
+
     @staticmethod
     def staticTest_returnHV():
         print ("staticTest_returnHV in")
@@ -313,7 +331,7 @@ class HogeX:
         return aiv
         
     def objectTest_returnALV(self):
-        alv = [20, 21, 22, 23, 24]
+        alv = [20L, 21L, 22L, 23L, 24L]
         print ("objectTest_returnALV in")
         return alv
         
@@ -326,6 +344,14 @@ class HogeX:
         adv = [40.2, 41.2, 42.2, 43.2, 44.2]
         print ("objectTest_returnADV in")
         return adv
+        
+    def objectTest_returnAOV(self):
+        aov = [500, 5005, "Hello javaScript world!!",
+            [600, 610, 620, 630, 640],
+            [700.3, 710.3, 720.3, 730.3, 740.3],
+        ]
+        print( "objectTest_returnAOV in" )
+        return aov
         
     def objectTest_returnHV(self):
         print ("objectTest_returnHV in")
