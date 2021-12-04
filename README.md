@@ -1,7 +1,7 @@
-jniscrteng
+﻿jniscrteng
 ==========
-c言語からjavaのScriptEngineを利用して、
-動的プログラム(graaljs,jruby,jpython3等)内の関数及びメゾッドを呼び出すライブラリです。
+javaのScriptEngineを利用して、
+動的プログラム(graaljs,jruby,jpython等)内の関数及びメゾッドを呼び出すライブラリです。
 
 ## Description ##
 ![use case](images/ucJniScrtEng.jpg)  
@@ -12,12 +12,11 @@ c言語からjavaのScriptEngineを利用して、
 ## Requirement ##
 
 libproxyjniに依存する(version 0.9のみ)  
-(https://github.com/siranovel/libproxyjni.git)
-
+(https://github.com/siranovel/libproxyjni.git)  
+java17以降(version 1.0以降)
 
 
 ## Usage ##
-このライブラリのテスト方法  
 $ jniscrteng [ScriptFile] [UpgrageModulePath]
 
 ## install ##
