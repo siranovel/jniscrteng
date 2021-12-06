@@ -4,7 +4,16 @@ javaのScriptEngineを利用して、
 動的プログラム(graaljs,jruby,jpython等)内の関数及びメゾッドを呼び出すライブラリです。
 
 ## Description ##
-![use case](images/ucJniScrtEng.jpg)  
+ver 0.9の場合  
+![use case](images/0.9/ucJniScrtEng.jpg)  
+
+ver 1.0の場合  
+![use case](images/1.0/ucJniScrtEng.jpg)  
+
+- 詳細  
+  - ライブラリ　(https://github.com/siranovel/mydocs/jniscrteng/lib )
+  - テスト     (https://github.com/siranovel/mydocs/jniscrteng/test)
+
 ## Demo ##
 
 ## VS. ##
@@ -17,7 +26,8 @@ java17以降(version 1.0以降)
 
 
 ## Usage ##
-$ jniscrteng [ScriptFile] [UpgrageModulePath]
+$ jniscrteng [ScriptFile] [UpgrageModulePath] | [ClassPath]  
+※ classpathは、jythonのみ指定
 
 ## install ##
     git clone https://github.com/siranovel/jniscrteng.git  
