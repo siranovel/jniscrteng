@@ -11,8 +11,8 @@ ver 1.0の場合
 ![use case](images/1.0/ucJniScrtEng.jpg)  
 
 - 詳細  
-  - ライブラリ　(https://github.com/siranovel/mydocs/jniscrteng/lib)
-  - テスト     (https://github.com/siranovel/mydocs/jniscrteng/test)
+  - ライブラリ　(https://siranovel.github.io/mydocs/jniscrteng/lib)
+  - テスト     (https://siranovel.github.io/mydocs/jniscrteng/test)
 
 ## Demo ##
 
