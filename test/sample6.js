@@ -99,6 +99,7 @@ function test_returnAOV() {
 				        key01: 1000,
 				        key02: 4000.6,
                   },
+                  () => { return 100; }
               ]
               
     print("test_returnAOV in")
@@ -363,8 +364,8 @@ var HogeY = class {
         this.memo = memo;
     }
     showInfox(objX) {
-       printf ("HogeY::showInfox in\n")
-       printf ("id:%s name:%s memo:%s\n", this.id, this.name, this.memo )
+       print ("HogeY::showInfox in")
+       print ("id:", this.id, " name:", this.name, " memo:", this.memo)
        objX.objectTest_paramS(this.id, this.name, this.memo)
     }
 };
